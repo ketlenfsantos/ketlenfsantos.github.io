@@ -1,0 +1,41 @@
+
+@font-face {
+    font-family: 'Montserrat Alt1';
+    src: url('/fonts/MontserratAlt1-Bold.woff2') format('woff2'),
+         url('/fonts/MontserratAlt1-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body, html {
+    background-color: #170B30;
+    height: 100%;
+    margin:0;
+    padding:0 ;
+    font-family: 'Montserrat', Arial, Helvetica,  sans-serif; 
+    overflow-x: hidden; /* Impede rolagem lateral */
+    overflow-x: hidden; /* Impede rolagem lateral */
+
+  }
+
+  h1,h2,h3,p{
+    margin: 0px;
+  }
+
+  ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+
+  img{
+    max-width: 100%; /*n cresce infinitamente a imagem*/
+    display: block;
+  }
+
+  .gradient-line {
+    width: 100vw; /* Ocupa a largura total da tela */
+    height: 35px; /* Defina a altura desejada */
+    background: linear-gradient(to right, #FF007A, #7B42FF, #00C9FF); /* Gradiente de cores */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}

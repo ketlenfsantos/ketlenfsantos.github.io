@@ -1,0 +1,211 @@
+.portfolio{
+    max-width:100%;
+    display: flex;
+    justify-content: center;
+
+   
+   
+}
+
+#port{
+    width: 40rem;
+    height: 12rem;
+    margin: auto;
+    
+}
+
+/* ONDE ESTÃO TODOS PROJETOS */
+.container3{
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+
+.projectsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;/* Cria colunas de no mínimo 300px e distribui o espaço igualmente */
+    gap: 10px; /* Espaçamento entre os itens */
+    padding: 20px;
+    width: 100%;
+    
+}
+
+/* PRIMEIRO PROJETO */
+.projects{
+
+    width: 35rem;
+    height: 18rem;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+}
+
+.projects:hover{
+    transform: scale(1.2 );
+    transition: transform 0.7s ease;
+}
+
+#firstProject{
+    position: relative;
+    background-image: url(/img/site.png);
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s ease-in-out;
+    
+
+}
+
+#firstProject::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com opacidade */
+    z-index: 2; /* Fica sobre a imagem de fundo */
+    
+}
+
+#firstProject:hover::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    
+
+}
+
+
+.information{
+
+    position: relative;
+    z-index: 2; /* Garante que o texto fique acima da camada de opacidade */
+    color: white; /* Texto branco para contraste */
+    text-align: center;
+    gap: -20px;
+    margin: auto;
+}
+
+.information p{
+    font-weight: 600;
+    color: rgb(211, 162, 242);
+    font-family: 'Montserrat', sans-serif;
+    height: 0.7rem;
+}
+
+.icons{
+    display: flex;
+
+}
+
+.description{
+    font-family: 'Fira Sans', sans-serif;
+    margin-top: 336px;
+    border: 2px solid white;
+    width: 55rem;
+    padding: 10px;
+    /* display: none; */
+    cursor: pointer;
+    display: none;
+    color: white;
+    border: 2px solid #ffffff;
+    border-bottom-left-radius: 20px;  /* Arredonda o canto inferior esquerdo */
+    border-bottom-right-radius: 20px; /* Arredonda o canto inferior direito */
+    background-color: rgba(217, 39, 184, 0.436);
+    font-size: 0.8rem;
+    
+    
+}
+
+.description button{
+    color: rgb(252, 252, 252);
+    background-color: rgb(227, 125, 212);
+    padding: 4px 20px;
+    border: 1px solid;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    
+}
+
+.projects:hover .description {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+    
+}
+.projects:hover .information {
+    display: none;
+}
+
+
+@media (max-width: 1140px){
+
+    .container3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        
+
+    }
+
+    .projectsContainer{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+     
+    }
+
+  
+
+
+ 
+
+    #port{
+        width: 600px;
+        
+    }
+}
+
+
+@media (max-width: 768px)  {
+    
+    .projectsContainer {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      
+    }
+
+    .projects{
+        width: 100%;
+        
+    }
+
+
+
+ 
+
+  }
+
+
+ 
+
+
+
+
+
+

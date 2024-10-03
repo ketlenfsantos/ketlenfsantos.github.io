@@ -1,0 +1,51 @@
+@import './global.css';
+@import './header.css';
+@import './introduction.css';
+@import './aboutme.css';
+@import './hability.css';
+@import './portfolio.css';
+@import './footer.css';
+
+.container1{
+    background-image: url(/img/background.webp);
+    height: 40rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+
+}
+
+
+    
+@media (max-width: 1005px){
+
+    .container1{
+        width: 100vw;
+        height: 150vh;
+        background-size: cover;
+        overflow-y: hidden;
+        overflow-x: hidden; /* Impede rolagem lateral */   
+       
+
+
+    }
+
+
+    
+}
+    @media (max-width: 768px){
+        .container1{
+            width: 100vw;
+            height: 150vh;
+            background-size: cover;
+            overflow-y: hidden;
+            overflow-x: hidden; /* Impede rolagem lateral */   
+           
+    
+    
+        }}
+
+        
+
+

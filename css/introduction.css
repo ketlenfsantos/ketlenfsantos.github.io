@@ -1,0 +1,99 @@
+.introduction{
+    max-width: 100%;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+
+
+}
+
+
+.information{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    gap: 1px;
+    margin-top: 80px;
+    
+}
+
+.information h1{
+    color: #F0F0F0;
+    font-size: 30px;
+    font-family: Montserrat Alt1;
+    text-transform: uppercase;
+}
+
+.information h2{
+    color: #F0F0F0;
+    font-size: 2.813rem;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2px;
+
+}
+
+#title{
+    color: rgb(239, 231, 233);
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 200;
+    margin-top: 2px;
+}
+
+
+
+.btnInformation{
+  
+    background: none;
+    padding: 10px 30px;
+    border: 1px solid;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color:#F0F0F0;  
+    font-family: 'Fira Sans', sans-serif;
+    letter-spacing: 2px; 
+    font-weight: 600;
+    margin-top: 20px;
+    
+}
+
+.btnInformation:hover{
+   
+
+    color: #F0F0F0;
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: rgba(240, 248, 255, 0.134);
+   
+}
+
+
+@media (max-width: 1005px){
+    .logo{
+        margin: auto;
+    }
+}
+    
+
+
+@media (max-width: 800px){
+    .introduction{
+        margin: auto;
+    }
+
+    .logo{
+        margin: auto;
+    }
+
+    #title{
+        margin-bottom: 5px;
+    }
+
+    .information h2 {
+        font-size: 1rem;
+    }
+}
