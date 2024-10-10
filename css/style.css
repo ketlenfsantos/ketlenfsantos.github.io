@@ -5,6 +5,7 @@
 @import './hability.css';
 @import './portfolio.css';
 @import './footer.css';
+@import './animação.css';
 
 .container1{
     background-image: url(/img/background.webp);
