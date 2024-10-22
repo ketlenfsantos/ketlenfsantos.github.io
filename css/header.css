@@ -8,8 +8,15 @@
     align-items: center;
     justify-content: center;
 }
+
+
 nav{
+    position: relative;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
 }
 
 .logo{
@@ -46,7 +53,9 @@ nav{
     flex-wrap: wrap; /*para que a linha quebre se a tela for diminuida*/
     
    
+
 }
+
 
 .header-menu a {
     font-family: 'Fira Sans', sans-serif;
@@ -64,41 +73,64 @@ nav{
     color: #FFC8E7;
 }
 
-@media (max-width: 1005px){
-    .header .header-menu{
-        flex-direction: column;
-        gap: 40px;
-        padding: 20px;
-        justify-content: center;   
-        
-    }
 
-    .logo{
-        width: 5rem;
-    }
-
-    .btnHeader{
-        margin: auto;
-    }
+.mobile-menu-icon{
+    display: none;
+}
+.mobile-menu{
+    display: none;
 }
 
-
-@media (max-width: 800px){
-    .header .header-menu{
-        flex-direction: column;
-        gap: 40px;
-        padding: 20px;
-        justify-content: center;   
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat; 
-        
+@media (max-width: 730px){
+    
+  
+    .header{
+        padding: 1.5rem 4rem;
+        gap: 50px;
+      
     }
 
-    .btnHeader{
-        margin: auto;
+   #nav-list{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+
+
+    .mobile-menu-icon button{
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu li{
+        display: block;
+        padding-top: 1.2rem ;
+    }
+
+    .mobile-menu .btnHeader{
+        display: block;
+        padding: 1rem 2rem;
+        width: 100%;
+    }
+
+    .open{
+        display: block;
     }
 }
+  
+
+
 
 
     

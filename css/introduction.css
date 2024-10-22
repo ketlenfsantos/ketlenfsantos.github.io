@@ -80,7 +80,7 @@
     
 
 
-@media (max-width: 800px){
+@media (max-width: 768px){
     .introduction{
         margin: auto;
     }
@@ -92,8 +92,17 @@
     #title{
         margin-bottom: 5px;
     }
+    .information
+    {
+        gap: 2px;
+        
+    }
 
     .information h2 {
         font-size: 1rem;
+    }
+
+    .btnInformation{
+        margin-top: 30px;
     }
 }

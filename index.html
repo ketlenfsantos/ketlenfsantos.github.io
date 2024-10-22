@@ -11,16 +11,20 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 <title>Portfolio | Ketlen Figueiredo</title>
-    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
     <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
   </head>
+  
 <body>
     <div class="container1">
-  <header class="header"> 
+     
+  <header class="header" data-anime="200"> 
     <img src="./img/logo.svg" alt="Logo KF" class="logo">
-
+    
     <nav>
-        <ul class="header-menu">
+    
+        <ul class="header-menu" id="nav-list" >
             <li> <a href="#sobremim"> Sobre Mim </a></li>
             <li> <a href="#habilidades"> Habilidades </a></li>
             <li> <a href="#projetos"> Projetos </a></li>
@@ -28,28 +32,46 @@
             <button class="btnHeader"> Download CV</button>
            
         </ul>
-    </nav>
+      </nav>
+
+        <div onclick="menuShow()"   class="mobile-menu-icon">
+        <button><img class="icon" src="./img/menu_white_36dp.svg"> </button>  
+        </div>
+    
+
+    <div class="mobile-menu"> 
+      <ul>
+        <li> <a href="#sobremim"> Sobre Mim </a></li>
+        <li> <a href="#habilidades"> Habilidades </a></li>
+        <li> <a href="#projetos"> Projetos </a></li>
+        <li> <a href="#contato"> Contato </a></li>
+        <button class="btnHeader"> Download CV</button>
+       
+    </ul>
+
+  
+</div>
   </header>
 
-  <main class="introduction">
-    <div class="information" data-anime="200"> 
+  <main class="introduction fadeInLeft" data-anime="500" >
+    <div class="information"> 
 
         <h1> Portfólio </h1>
         <h2> Ketlen Figueiredo </h2>
-        <p id="title" data-anime="200"> Desenvolvedora Front-end | UI/UX Designer </p>
+        <p id="title" > Desenvolvedora Front-end | UI/UX Designer </p>
 
-        <button class="btnInformation" data-anime="400"> SAIBA MAIS </button>
+        <button class="btnInformation" > SAIBA MAIS </button>
 
     </div>
 
   </main>
   </div>
 
-<section class="about" aria-label="sobre">
+<section class="about fadeInUp" aria-label="sobre">
     
 <img class="imgMe" src="./img/foto.png">
     
-   <div class="aboutMe"> 
+   <div class="aboutMe" > 
     <img class="imgabout" src="./img/sobre.svg" alt="Fotografia Dev" >
     <h1> Me chamo KETLEN, minha missão é transformar ideias em resultados no digital </h1>
     <p> Sou Desenvolvedora Front-End Júnior e Designer UX/UI. Há dois anos iniciei minha nova trajetória na área de programação, após encerrar o ciclo como Fisioterapeuta. Desde criança, sempre tive afinidade com a tecnologia.<br> Apaixonada por jogos de computador, criava também páginas e conteúdos na internet. Em 2020 tive um pequeno negócio de produtos personalizados, em que eu era a responsável pela criação de designers e gestão de redes sociais</p>
@@ -166,9 +188,8 @@
 
 
 </footer>
-
-<script src="./js/plugins/simple-anime.js"></script>
-<script src="./js/script.js"></script>
+<script src="/js/plugins/simple-anime.js"></script>
+<script src="js/script.js"></script>
    
    </body>
 </html>

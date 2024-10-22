@@ -5,10 +5,11 @@
 @import './hability.css';
 @import './portfolio.css';
 @import './footer.css';
-@import './animação.css';
+
+
 
 .container1{
-    background-image: url(/img/background.webp);
+    background:linear-gradient(to right, #FF007A, #7B42FF, #00C9FF); /* Gradiente de cores */
     height: 40rem;
     background-size: cover;
     background-position: center;
@@ -16,6 +17,27 @@
     width: 100vw;
 
 }
+.fadeInDown {
+    transform: translate3d(0, -20px, 0);
+  }
+  .fadeInUp {
+    transform: translate3d(0, 20px, 0);
+  }
+  .fadeInRight {
+    transform: translate3d(20px, 0, 0);
+  }
+  .fadeInLeft {
+    transform: translate3d(-20px, 0, 0);
+  }
+
+[data-anime] {
+    opacity: 0;
+  }
+  .anime {
+    opacity: 1;
+    transform: none;
+    transition: transform 0.8s, opacity 0.8s;
+  }
 
 
     
@@ -23,7 +45,7 @@
 
     .container1{
         width: 100vw;
-        height: 150vh;
+        
         background-size: cover;
         overflow-y: hidden;
         overflow-x: hidden; /* Impede rolagem lateral */   
@@ -38,23 +60,19 @@
     @media (max-width: 768px){
         .container1{
             width: 100vw;
-            height: 150vh;
             background-size: cover;
             overflow-y: hidden;
             overflow-x: hidden; /* Impede rolagem lateral */   
-           
-    
+           display: flex;
+           flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        
     
         }}
 
         
 
 
-        [data-anime] {
-            opacity: 0;
-          }
-          .anime {
-            opacity: 1;
-            transform: none;
-            transition: transform 0.8s, opacity 0.8s;
-          }
+      
+        
