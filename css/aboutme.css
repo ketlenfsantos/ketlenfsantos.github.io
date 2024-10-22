@@ -18,6 +18,8 @@
 .imgMe img{
   margin: auto;
   order:2;
+  display: block;
+  max-width: 100%;
 }
 
 .aboutMe{
@@ -35,6 +37,7 @@
 width: 20rem;
 height: 10rem;
 margin-bottom: -20px;
+
 
 }
 
@@ -62,7 +65,8 @@ height: 2rem;
         flex-wrap: wrap;
     }
     .imgMe{
-        width: 500px;
+        display: block;
+        max-width: 100%;
         margin: auto;
         align-items: end;
     }

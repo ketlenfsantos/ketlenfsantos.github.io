@@ -5,6 +5,7 @@
 @import './hability.css';
 @import './portfolio.css';
 @import './footer.css';
+@import './menu-mobile.css';
 
 
 
@@ -41,11 +42,11 @@
 
 
     
-@media (max-width: 1005px){
+@media (max-width: 730px){
 
     .container1{
         width: 100vw;
-        
+        height: 20rem;
         background-size: cover;
         overflow-y: hidden;
         overflow-x: hidden; /* Impede rolagem lateral */   

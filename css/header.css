@@ -8,8 +8,6 @@
     align-items: center;
     justify-content: center;
 }
-
-
 nav{
     position: relative;
     display: flex;
@@ -74,60 +72,7 @@ nav{
 }
 
 
-.mobile-menu-icon{
-    display: none;
-}
-.mobile-menu{
-    display: none;
-}
 
-@media (max-width: 730px){
-    
-  
-    .header{
-        padding: 1.5rem 4rem;
-        gap: 50px;
-      
-    }
-
-   #nav-list{
-        display: none;
-    }
-
-    .mobile-menu-icon{
-        display: block;
-    }
-
-
-
-    .mobile-menu-icon button{
-        background: transparent;
-        border: none;
-        cursor: pointer;
-    }
-
-    .mobile-menu ul{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
-
-    .mobile-menu li{
-        display: block;
-        padding-top: 1.2rem ;
-    }
-
-    .mobile-menu .btnHeader{
-        display: block;
-        padding: 1rem 2rem;
-        width: 100%;
-    }
-
-    .open{
-        display: block;
-    }
-}
   
 
 
