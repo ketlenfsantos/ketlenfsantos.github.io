@@ -46,7 +46,7 @@
 
     .container1{
         width: 100vw;
-        height: 20rem;
+        height: 50rem;
         background-size: cover;
         overflow-y: hidden;
         overflow-x: hidden; /* Impede rolagem lateral */   

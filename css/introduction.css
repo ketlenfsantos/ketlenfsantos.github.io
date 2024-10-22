@@ -49,15 +49,16 @@
 .btnInformation{
   
     background: none;
-    padding: 10px 30px;
     border: 1px solid;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color:#F0F0F0;  
     font-family: 'Fira Sans', sans-serif;
     letter-spacing: 2px; 
-    font-weight: 600;
+    font-weight: 300;
     margin-top: 20px;
+    width: 235px;
+    height: 30px;
     
 }
 
@@ -71,6 +72,10 @@
    
 }
 
+.btnCurriculo{
+    display: none;
+}
+
 
 @media (max-width: 1005px){
     .logo{
@@ -80,7 +85,7 @@
     
 
 
-@media (max-width: 768px){
+@media (max-width: 700px){
     .introduction{
         margin: auto;
     }
@@ -90,7 +95,8 @@
     }
 
     #title{
-        margin-bottom: 5px;
+        margin-bottom: 2px;
+        
     }
     .information
     {
@@ -99,10 +105,37 @@
     }
 
     .information h2 {
-        font-size: 1rem;
+        font-size: 25px;
     }
 
     .btnInformation{
-        margin-top: 30px;
+        margin-top: 20px;
+    }
+
+    .btnCurriculo{
+        display: block;
+        background: none;
+        border: 1px solid;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        color:#F0F0F0;  
+        font-family: 'Fira Sans', sans-serif;
+        letter-spacing: 2px; 
+        font-weight: 300;
+        margin-top: 5px;
+        text-transform: uppercase;
+        height: 30px;
+        width: 235px;
+        
+    }
+
+    .btnCurriculo:hover{
+   
+
+        color: #F0F0F0;
+        transform: scale(1.1);
+        cursor: pointer;
+        background-color: rgba(240, 248, 255, 0.134);
+       
     }
 }

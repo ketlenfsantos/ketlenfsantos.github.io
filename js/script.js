@@ -1,13 +1,15 @@
-// function menuShow(){
-//   const menuMobile = document.querySelector('.mobile-menu');
-//   if(menuMobile.classList.contains('open')) {
-//     menuMobile.classList.remove('open');}
-//     else {
-//       menuMobile.classList.add('open');
-//     }
-//   }
+
+
+  function toggleMenu() {
+    const menu = document.querySelector('.menu-mobile');
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'block';
+    }
+}
 
   
-//     new SimpleAnime();
+    new SimpleAnime();
   
-  
+ 

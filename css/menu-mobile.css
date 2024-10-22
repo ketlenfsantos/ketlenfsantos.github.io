@@ -1,0 +1,77 @@
+.mobile-menu-icon{
+    display: none;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+@media (max-width: 700px){
+     .mobile-menu-icon{
+        position: relative; /* Torna o posicionamento do menu suspenso relativo ao botão */
+        display: inline-block;
+        
+    }
+
+    .mobile-menu-icon button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        
+
+    
+    }
+
+
+    .header-menu {
+        display: none;
+    
+       
+    }
+
+    .header-menu button {
+        display: none;
+    }
+
+    header{
+      gap: 70px;
+    
+    }
+
+    .menu-mobile{
+    position: absolute;
+    top: 40px; /* Ajuste a posição vertical conforme necessário */
+    left: 0;
+    z-index: 1;
+    width: 150px; /* Ajuste a largura do menu conforme necessário */
+    overflow: hidden;
+    text-align:start;
+    
+
+    }
+
+    .menu-mobile ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        
+    }
+
+    .menu-mobile li{
+        display: block;
+        padding-top: 1.2rem;
+        
+    }
+   
+    .menu-mobile a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 300;
+    }
+
+    .open{
+        display: block;
+    }
+}
